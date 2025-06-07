@@ -3,3 +3,294 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navigation {
+  display: flex;              /* Make container flexbox */
+  align-items: center;        /* Vertically center items */
+  justify-content: space-between;  /* Spread elements across the container */
+  padding: 0 200px; 
+  margin: -30px 0;
+  background-color: #eaddca98;
+} 
+
+.navigation nav ul {
+  display: flex;              /* Make the ul a flex container */
+  list-style: none;           /* Remove bullet points */
+  margin: 0;                  /* Remove default margin */
+  padding: 0 50px;                 /* Remove default padding */
+  gap: 50px;    
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+  color: rgba(113, 60, 57);
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navigation #nav-links nav ul li a:hover {
+  color: black;
+}
+
+/* Optional: make social media icons inline and spaced */
+#social-media a {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#About {
+  background-image: url('Images/Photos/banner.svg');
+  background-size: cover;       /* Make sure image covers the entire section */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  /* Optional: add some padding so content doesn’t stick to edges */
+  padding: 0 200px;
+  color: #EADDCA; 
+  display: flex;
+  align-items: center;      /* Vertically centers items */
+  justify-content: space-between;  /* Space between description and image */
+  gap: 60px;                /* Optional spacing between the two */
+  max-height: 450px;
+}
+
+#About #Hero-image {
+  padding-bottom: 0px;
+  margin-bottom: 23px;
+  margin-top: 0px;
+}
+
+#About #Hero-description h2 {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+#About #Hero-description p {
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#Catalog {
+  padding: 80px 200px; /* Top/bottom: 80px, Left/right: 60px */
+  background-color: #eaddca98; /* Optional background */
+}
+
+#Catalog h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(113, 60, 57);
+}
+
+#Audio {
+  display: flex;
+  justify-content: space-between; /* Spread out iframes */
+  gap: 10px; /* Optional: controls space *between* iframes */
+  flex-wrap: wrap; /* Makes it responsive on smaller screens */
+}
+
+#Audio iframe {
+  flex: 1 1 30%; /* Makes them take up roughly equal width */
+  max-width: 410px; /* Prevents them from becoming too wide */
+  min-width: 300px; /* Optional: sets minimum width */
+  height: 352px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Tour {
+  padding: 80px 200px;
+  background-color: #eaddcaa7; /* Optional: light background for contrast */
+}
+
+#Tour h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(113, 60, 57);
+}
+
+#tour-info {
+  border-radius: 15px;
+  overflow: hidden; /* Ensures the rounded corners show properly */
+  box-shadow: 0 4px 12px rgba(235, 231, 231, 0.1); /* Optional: soft shadow */
+}
+
+#tour-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+#tour-table td {
+  color: rgb(196, 164, 132);
+}
+
+#tour-table th,
+#tour-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgb(196, 164, 132);
+  text-align: center;
+}
+
+#tour-table th {
+  background: radial-gradient(circle, rgb(113, 60, 57), rgb(60, 25, 22));
+  color: #EADDCA;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#tour-table tr {
+  background: radial-gradient(circle, rgb(113, 60, 57), rgb(60, 25, 22));
+}
+
+#tour-table tr:hover {
+  background: rgb(196, 164, 132);
+  cursor: default;
+}
+
+#tour-table tr:hover td{
+  color: rgb(113, 60, 57);
+}
+
+
+#Subscribe{
+  background: radial-gradient(circle, rgb(113, 60, 57), rgb(60, 25, 22));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.subscription-form{
+  width: 450px;
+  padding: 60px 30px ;
+  margin-top: 50px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.020);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255 255 255 0.4);
+  border-left: 1px solid rgba(255 255 255 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.subscription-form h2,
+.subscription-form h5,
+.subscription-form label {
+  text-align: center;
+  width: 100%;
+  color: #EADDCA;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.035);
+  color: rgba(255, 255, 255, 0.035);
+}
+
+.subscription-form button {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #EADDCA;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+#notification-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#notification-section h5 {
+  color: #EADDCA;
+  font-size: 18px;
+  margin-bottom: 15px; /* Add space below heading */
+}
+
+#preference {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center; /* Center the group in the form */
+}
+
+#preference label {
+  display: flex;
+  align-items: center;
+  color: #EADDCA;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 220px; /* Consistent width for all items */
+  justify-content: flex-start; /* Align text left within the box */
+}
+
+#preference input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #964B00;
+}
+
+.subscription-form h2 {
+  margin-bottom: 30px; /* space below "Stay in the Loop" */
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  margin: 0px 0;
+  background-color: #eaddca98; /* Optional: to distinguish it */
+  border-top: 1px solid #ccc; /* Optional: adds a nice divider */
+}
+
+#footer-social-media a {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+#copyright h3 {
+  font-size: 18px;
+  color: rgba(113, 60, 57);
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
